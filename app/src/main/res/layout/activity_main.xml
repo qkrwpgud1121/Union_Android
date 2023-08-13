@@ -116,7 +116,7 @@
             android:background="#E91E63" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btn_signIn"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_weight="48"

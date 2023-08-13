@@ -18,6 +18,7 @@
             android:exported="false" />
 
         <activity android:name=".findPassword"/>
+        <activity android:name=".signIn"/>
 
         <activity
             android:name=".MainActivity"
