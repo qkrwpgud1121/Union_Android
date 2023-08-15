@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/edt_email"
         android:layout_width="0dp"
         android:layout_height="38dp"
         android:layout_marginStart="16dp"
@@ -42,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/edt_password"
         android:layout_width="0dp"
         android:layout_height="38dp"
         android:layout_marginStart="16dp"
@@ -57,7 +57,7 @@
         android:textColorHint="#8A8A96"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_email" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -69,7 +69,7 @@
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
 
     <Button
         android:id="@+id/btn_logIn"
@@ -125,5 +125,13 @@
             android:textColor="#E91E63"
             android:textSize="10sp" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="412dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
