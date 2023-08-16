@@ -53,7 +53,10 @@ class MainActivity : AppCompatActivity() {
             val email = edt_email.text.toString()
             val password = edt_password.text.toString()
 
-            connection(email, password)
+            if ( email.isNotEmpty() && password.isNotEmpty()) {
+                connection(email, password)
+            }
+
         }
 
         btn_test.setOnClickListener{
