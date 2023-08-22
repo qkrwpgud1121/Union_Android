@@ -23,6 +23,7 @@
 
         <activity android:name=".findPassword"/>
         <activity android:name=".signIn"/>
+        <activity android:name=".MainList"/>
 
         <activity
             android:name=".MainActivity"

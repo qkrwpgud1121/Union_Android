@@ -2,21 +2,17 @@ package com.example.union
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Adapter
 import android.widget.Button
 import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.JsonParser
-import org.json.JSONArray
-import org.json.JSONObject
-import java.io.InputStreamReader
 import java.io.OutputStream
 import java.io.OutputStreamWriter
-import java.lang.StringBuilder
 import java.net.HttpURLConnection
 import java.net.URL
-import java.nio.charset.Charset
 import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity() {
@@ -54,7 +50,8 @@ class MainActivity : AppCompatActivity() {
             val password = edt_password.text.toString()
 
             if ( email.isNotEmpty() && password.isNotEmpty()) {
-                connection(email, password)
+                //connection(email, password)
+                startActivity(Intent(this, MainList::class.java))
             }
 
         }
